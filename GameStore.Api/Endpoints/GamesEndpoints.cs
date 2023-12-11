@@ -37,7 +37,7 @@ public static class GamesEndpoints
                 ImageUri = gameDto.ImageUri
             };
             repository.Create(game);
-            return Results.CreatedAtRoute(GetGameEndpointName, new { id = game.Id, game });
+            return Results.CreatedAtRoute(GetGameEndpointName, new { id = game.Id, game }, game);
         });
 
         group.MapPut("/{id}", (IGamesRepository repository, int id, UpdatedGameDto updatedGameDto) =>
