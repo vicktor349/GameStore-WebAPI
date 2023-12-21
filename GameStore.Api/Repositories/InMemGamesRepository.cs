@@ -11,7 +11,7 @@ public class InMemGamesRepository : IGamesRepository
         {
             Id = 1,
             Name = "Street Fighter II",
-            Genre = "Fighting",
+            Genre = "x",
             Price = 19.99M,
             ReleaseDate = new DateTime(1991, 2, 1),
             ImageUri = "https://placehold.co/100",
